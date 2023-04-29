@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
 }
+p{
+    font-family: "Playfair Display", serif;
+}
+b{
+    font-family: "Playfair Display", serif;
+}
 
 h1, h2 {
     font-family: "Playfair Display", serif;
@@ -606,6 +612,7 @@ footer .flex {
 }
 
 footer h5 {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
     color: #fff;
     margin-bottom: 1rem;
     font-weight: 300;
@@ -620,8 +627,8 @@ footer .footer-about {
 }
 
 footer .footer-about p {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
     width: 65%;
-    
 }
 
 footer .footer-quick-links {

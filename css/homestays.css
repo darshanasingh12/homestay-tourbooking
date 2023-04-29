@@ -1,6 +1,270 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
 
+
+
+
+:root{
+    --main-color:#443;
+    --border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    --border-radius-hover:4% 95% 6% 95%/95% 4% 92% 5%;
+    --border:.2rem solid var(--main-color);
+    --border-hover:.2rem dashed var(--main-color);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+main{
+  position:absolute;
+  z-index: 1;
+  top: 100px;
+
+}
+
+.heading{
+    font-size: 9rem;
+    text-transform: uppercase;
+    color:transparent;
+    -webkit-text-stroke: .05rem var(--main-color);
+    letter-spacing: .2rem;
+    text-align: center;
+    pointer-events: none;
+    position: relative;
+}
+
+.heading span{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color:var(--main-color);
+    font-size: 3rem;
+}
+
+.btn{
+  display: inline-block;
+  padding:.9rem 1.5rem;
+  border-radius: var(--border-radius);
+  color:var(--main-color);
+  background: none;
+  border:var(--border);
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  border-radius: var(--border-radius-hover);
+  border:var(--border-hover);
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background:#ffe4c4;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color:var(--main-color);
+}
+
+.header .logo{
+  color:var(--main-color);
+  font-size: 4.2rem;
+  font-family:'Brush Script MT',cursive;
+}
+
+.header .logo a{
+  padding-left: .5rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+  --orange:#ffa500;
+}
+
+.gallery h1{
+  color: black;
+  margin-top: 160px;
+  padding: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+  top: -70rem;
+}
+
+.intro{
+  font-family: 'Times New Roman';
+  text-align: center;
+  font-size: 2.8rem;
+  color:darkmagenta;
+  margin-top: -70rem;
+}
+
+
+
+.contact-form input[type=submit]{
+  background-color: dodgerblue;
+  border: 2px solid dodgerblue;
+  font-size: 18px;
+  width: 50%;
+  height: 40px;
+  top: -40rem;
+ 
+ 
+}
+
+.contact-form input[type=submit]:hover{
+  background-color: transparent;
+  color: black;
+}
+
+.gallery h2{
+  color: crimson;
+  margin-top: 40px;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+  top: -1rem;
+}
+.gallery .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:3rem;
+}
+ 
+  .gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border:1rem solid #fff;
+    border-radius: .5rem;
+    flex:1 1 30rem;
+    height: 25rem;
+    position: relative;
+  }
+ 
+  .gallery .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+
+  .gallery .heading h2{
+    font-size: 1rem;
+    color: palevioletred;
+    margin-top: 80px;
+  }
+ 
+  .gallery .box-container .box .content{
+    position: absolute;
+    top:-100%; left:0;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    background:rgba(0,0,0,.7);
+    padding:  2rem;
+    padding-top: 5rem;
+  }
+ 
+  .gallery .box-container .box:hover .content{
+    top:0;
+  }
+ 
+  .gallery .box-container .box .content h3{
+    font-size: 2rem;
+    color:orange;
+  }
+ 
+  .gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color:rgb(255, 255, 255);
+    padding:5rem 0;
+  }
+
+  .gcontent{
+    font-size: 2rem;
+    color:black;
+    text-align: center;
+    font-family: 'Times New Roman';
+  }
+
+
+
+/* Create two equal columns that floats next to each other */
+.gallery .column {
+  float:left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.column h2{
+  font-family: 'Times New Roman';
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 5px;
+}
+
+.column ul{
+  font-family: 'Times New Roman';
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+@media (max-width:991px){
+  html{
+     font-size: 55%;
+  }
+}
+
+.nav{
+  display: none;
+}
+
+@media (max-width: 480px)
+{
+  .rules{
+    display: flex;
+  }
+  .rules .row .column {
+    height: 700px;
+  }
+  .gallery h1{
+      font-size: 30px;
+      margin-top:90px;
+  }
+  .gallery h2{
+      font-size: 20px;
+     
+  }
+ 
+}
 /* start: global styles */
+
+
+
 body {
     font-family: "Roboto", "Helvetica", "Sans-serif";
     margin: 0;
@@ -140,6 +404,15 @@ header ul li {
     display: inline-block;
     margin: 0 15px;
     
+}
+p{
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+}
+h5{
+    font-family: "Playfair Display", serif;
+}
+b{
+    font-family: "Playfair Display", serif;
 }
 header ul li ion-icon {
     font-size: 30px;
@@ -487,6 +760,8 @@ footer h5 {
     color: #fff;
     margin-bottom: 1rem;
     font-weight: 300;
+    font-size: 16px;
+    
 }
 
 footer h5.follow-us {
@@ -499,7 +774,8 @@ footer .footer-about {
 
 footer .footer-about p {
     width: 65%;
-    
+    font-size: 15px;
+
 }
 
 footer .footer-quick-links {
@@ -510,6 +786,8 @@ footer .footer-quick-links ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    font-size: 16px;
+
 }
 
 footer .footer-quick-links ul li {
@@ -527,10 +805,12 @@ footer .footer-quick-links ul li a:hover {
 
 footer .footer-subscribe {
     width: 35%;
+    font-size: 14px;
 }
 
 #subscribe-container {
     position: relative;
+    font-size: 14px;
 }
 
 footer .footer-subscribe input {
@@ -539,7 +819,7 @@ footer .footer-subscribe input {
     font-family: "Roboto", "Helvetica", "Sans-serif";
     border: 1px solid #6c757d;
     background-color: transparent;
-    font-size: 1rem;
+    font-size: 14px;
     padding: 10px;
     color: #fff;
     box-sizing: border-box;
@@ -704,7 +984,6 @@ footer .footer-about p{
     #testimonials-slider p {
         font-size: 1.2rem;
     }
-
     #properties .container:before {
         top: 2px;
         font-size: 0.85rem;
