@@ -106,7 +106,7 @@ main{
 .gallery h1{
   color: black;
   margin-top: 160px;
-  padding: 30px;
+  padding: 20px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 45px;
   top: -70rem;
@@ -115,7 +115,7 @@ main{
 .intro{
   font-family: 'Times New Roman';
   text-align: center;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   color:darkmagenta;
   margin-top: -70rem;
 }
