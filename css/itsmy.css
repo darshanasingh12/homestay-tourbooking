@@ -148,7 +148,7 @@ header ul li ion-icon {
 }
 header ul li ion-icon1 {
     font-size: 30px;
-    color: crimson;
+    color: white;
     padding: 0.7rem;
 }
 
@@ -169,7 +169,7 @@ header ul.is-sticky li a {
 
 header ul li a:hover,
 header ul li a.active {
-    color: crimson;
+    color: white;
 }
 
 header ul.is-sticky li a:hover,

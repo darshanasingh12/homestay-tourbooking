@@ -1,4 +1,7 @@
-/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+
+
 
 :root{
     --main-color:#443;
@@ -96,7 +99,7 @@ main{
 
 .header .logo a{
   padding-left: .5rem;
-} */
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 :root{
@@ -106,7 +109,7 @@ main{
 .gallery h1{
   color: black;
   margin-top: 160px;
-  padding: 20px;
+  padding: 30px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 45px;
   top: -70rem;
@@ -115,7 +118,7 @@ main{
 .intro{
   font-family: 'Times New Roman';
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color:darkmagenta;
   margin-top: -70rem;
 }
@@ -128,7 +131,7 @@ main{
   font-size: 18px;
   width: 50%;
   height: 40px;
-  /* top: -30rem; */
+  top: -40rem;
  
  
 }
@@ -444,7 +447,7 @@ header ul li a.active {
 
 header ul.is-sticky li a:hover,
 header ul.is-sticky li a.active {
-    color:crimson;
+    color:white;
 }
 /* end: header styles */
 
@@ -502,6 +505,245 @@ header ul.is-sticky li a.active {
 
 /* end: hero section styles */
 
+/* Text Slide starts */
+#slide .marquee-w {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+#slide .marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+#slide .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: 'poppinsbold';
+    text-align: center;
+    -webkit-text-stroke: 1px #eb35ab;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 75px;
+    animation: marquee 20s linear infinite;
+}
+#slide .marquee2 span {
+    animation-delay: 10s;
+}
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+/* Text Slide ends */
+
+
+
+/* start: best real estate amenities */
+#the-best {
+    margin: 2rem 0;
+}
+
+#the-best .flex > img {
+    width: 47%;
+}
+
+#the-best .flex > div {
+    width: 40%;
+}
+#the-best p{
+    font-size: 1.5rem;
+    color: gray;
+
+}
+#the-best ul {
+    padding-left: 20px;
+    margin-bottom: 4rem;
+    color: black;
+}
+
+#the-best table td ul li {
+    margin: 10px 0;
+}
+/* end: best real estate amenities*/
+
+/* start: Services styles */
+#how-it-works {
+    padding: 3rem 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+#how-it-works h2 {
+    margin-bottom: 3rem;
+}
+
+#how-it-works .flex > div {
+    width: 30%;
+}
+
+#how-it-works h4 {
+    color: #343a40;
+    margin-top: 1rem;
+}
+
+#how-it-works span.fas {
+    color: #eb35ab;
+    font-size: 35px;
+}
+/* end: services styles */
+
+/* start: testimonials styles */
+#testimonials {
+    margin-bottom: 8rem;
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+#testimonials-slider .slick-slide {
+    text-align: center;
+}
+
+#testimonials-slider blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 1rem auto 3rem;
+    max-width: 740px;
+}
+
+#testimonials-slider .testimonials-caption {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#testimonials-slider .testimonials-caption img {
+    float: left;
+    border-radius: 30px;
+    width: 60px;
+}
+
+.testimonials-caption p {
+    position: relative;
+    top: 13px;
+    font-size: 1.2rem;
+}
+
+#testimonials-slider .slick-arrow {
+    text-decoration: none;
+    position: absolute;
+    font-size: 40px;
+    color: #222;
+    top: 50%;
+    margin-top: -35px;
+    z-index: 1;
+}
+#testimonials-slider .slick-next {
+    right: 0;
+}
+/* end: testimonials styles */
+
+/* start: contact us styles */
+#contact {
+    background: rgba(45, 43, 43, 0.7)url(../css/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    padding: 4rem 0 8rem;
+    height: calc(100vh);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#form-container {
+    width: 58%;
+    background: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+    height: 0%;
+}
+
+#form-container h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 2rem;
+}
+
+#form-container label {
+    display: block;
+    color: #000;
+    margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1rem;
+    color: #495057;
+}
+
+#form-container textarea {
+    height: 170px;
+    margin-bottom: 2rem;
+    resize: none;
+}
+
+#address-container {
+    width: 38%;
+    background: #fff;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 0%;
+}
+
+#address-container label {
+    font-weight: 700;
+    display: block;
+    margin-top: 2rem;
+}
+
+#address-container label:first-child {
+    margin-top: 0;
+}
+
+#address-container address {
+    margin-bottom: 1.5rem;
+    font-style: normal;
+}
+
+#address-container a {
+    text-decoration: none;
+    color: white;
+}
+
+#address-container a:hover {
+    text-decoration: underline;
+}
+/* end: contact us styles */
 
 /* start: footer styles */
 footer {
@@ -861,50 +1103,3 @@ footer .footer-about p{
   }
 }
 /* end: media queries */
-
-/*Whatsapp container starts*/
-.whatsapp-btn-container {
-    position: fixed;
-    right: 30px;
-    opacity: 0;
-    bottom: -50px;
-    padding: 24px;
-    animation: fade-up 1000ms forwards;
-    animation-delay: 1000ms;
-}
-@keyframes fade-up {
-    100% {
-        bottom: 25px;
-        opacity: 1;
-    } }
-@media only screen and (max-width: 750px){
-    @keyframes fade-up {
-        100% {
-            bottom: 35px;
-            opacity: 1;
-            }
-    } }
-    .whatsapp-btn-container .whatsapp-btn {
-        font-size: 48px;
-        color: #25d366;
-        display: inline-block;
-        transition: all 400ms;
-    }
-    .whatsapp-btn-container .whatsapp-btn:hover {
-        transform: scale(1.2);
-    }
-    .whatsapp-btn-container span {
-        position: absolute;
-        top: 0;
-        left: 4px;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        color: #075e54;
-        transform: rotateZ(20deg) translateX(10px);
-        opacity: 0;
-        transition: all 400ms;
-    }
-    .whatsapp-btn-container .whatsapp-btn:hover + span {
-        transform: rotateZ(0deg) translateX(0px);
-        opacity: 1;
-    }
